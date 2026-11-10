@@ -8,11 +8,11 @@ use Override;
 
 class petugas extends Model
 {
-    public function casts(): array
-    {
-        return
-        [
-            
-        ];
-    }
+    protected $fillable = [
+        'id_petugas',
+        'username',
+        'password',
+        'nama_petugas',
+        'level'
+    ];
 }
